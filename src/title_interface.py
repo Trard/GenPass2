@@ -1,9 +1,9 @@
 from other_classes import *
 from widget_classes import *
-
+import tkinter as tk
 
 class TitleUI(UI):
-    main_frame = Frame()
+    main_frame = tk.Frame()
     title_name = ClassicLabel(main_frame, text='Genpass 4.0 | Second Step', font='Helvetica 20')
     subtitle_name = ClassicLabel(main_frame, text='Check | Generate | Save')
 

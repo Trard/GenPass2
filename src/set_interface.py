@@ -1,10 +1,11 @@
 from widget_classes import *
 from other_classes import *
+import tkinter as tk
 
-choose_black_theme = IntVar()
+choose_black_theme = tk.IntVar()
 
 class SetUI(UI):
-    main_frame = Frame()
+    main_frame = tk.Frame()
     portal_autosave_button = ClassicButton(main_frame, text='Настройка автосейва')
     portal_color_button = ClassicButton(main_frame, text='Настройка краски')
     portal_language_button = ClassicButton(main_frame, text='Выбор языка')
@@ -18,7 +19,7 @@ class SetUI(UI):
                             SetUI.portal_language_button, SetUI.portal_other_button, SetUI.select_theme_checkbutton, SetUI.main_frame]
 
     def place(self):
-        SetUI.main_frame.place(anchor=CENTER, rely=0.4, relx=0.5)
+        SetUI.main_frame.place(anchor=tk.CENTER, rely=0.4, relx=0.5)
         packing_portals_list = [[SetUI.portal_autosave_button, SetUI.portal_color_button, SetUI.leave_button],
                                 [SetUI.portal_language_button, SetUI.portal_other_button, SetUI.select_theme_checkbutton]]
         for i in range(len(packing_portals_list)):

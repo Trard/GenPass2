@@ -1,8 +1,11 @@
+#!/usr/bin/python
+# -*- coding: UTF8 -*-
+
 from function_generator import *
 from generator_interface import *
 from main_menu.interface import main_menu_interface
 from checkpas_interface import *
-
+import tkinter as tk
 
 def select_translation(translation_pairs, language='russian'):
     if language == 'russian':
@@ -33,7 +36,7 @@ def generate():
             result += select_symbols(symbolbet.get(), number - len(req_symbol_string))
         elif int(range_len_pas.get()[1]) > len(req_symbol_string):
             result += select_symbols(symbolbet.get(), range_len_pas.get()[1] - len(req_symbol_string))
-    gen_interface.generate_pas_entry.delete(0, END)
+    gen_interface.generate_pas_entry.delete(0, tk.END)
     gen_interface.generate_pas_entry.insert(0, result)
 
 
@@ -95,12 +98,12 @@ def get_range():
 def stay_letters():
     if select_letter.get():
         symbolbet.delete_black_symbols(split(only_type_symbols(symbolbet.get_black(), 'letters')))
-        gen_interface.gr_letter_checkbutton['state'] = NORMAL
-        gen_interface.sm_letter_checkbutton['state'] = NORMAL
+        gen_interface.gr_letter_checkbutton['state'] = tk.NORMAL
+        gen_interface.sm_letter_checkbutton['state'] = tk.NORMAL
     else:
         symbolbet.add_black_symbols(split(only_type_symbols(symbolbet.get(), 'letters')))
-        gen_interface.gr_letter_checkbutton['state'] = DISABLED
-        gen_interface.sm_letter_checkbutton['state'] = DISABLED
+        gen_interface.gr_letter_checkbutton['state'] = tk.DISABLED
+        gen_interface.sm_letter_checkbutton['state'] = tk.DISABLED
 
 
 def stay_sm_letters():
@@ -108,11 +111,11 @@ def stay_sm_letters():
         symbolbet.delete_black_symbols(
             split(selection_letters(only_type_symbols(symbolbet.get_black(), 'letters'), 'small_letters')))
         if select_gr_letter.get():
-            gen_interface.letter_checkbutton['state'] = NORMAL
+            gen_interface.letter_checkbutton['state'] = tk.NORMAL
     else:
         symbolbet.add_black_symbols(
             split(selection_letters(only_type_symbols(symbolbet.get(), 'letters'), 'small_letters')))
-        gen_interface.letter_checkbutton['state'] = DISABLED
+        gen_interface.letter_checkbutton['state'] = tk.DISABLED
 
 
 def stay_gr_letters():
@@ -120,11 +123,11 @@ def stay_gr_letters():
         symbolbet.delete_black_symbols(
             split(selection_letters(only_type_symbols(symbolbet.get_black(), 'letters'), 'great_letters')))
         if select_sm_letter.get():
-            gen_interface.letter_checkbutton['state'] = NORMAL
+            gen_interface.letter_checkbutton['state'] = tk.NORMAL
     else:
         symbolbet.add_black_symbols(
             split(selection_letters(only_type_symbols(symbolbet.get(), 'letters'), 'great_letters')))
-        gen_interface.letter_checkbutton['state'] = DISABLED
+        gen_interface.letter_checkbutton['state'] = tk.DISABLED
 
 
 def stay_numbers():

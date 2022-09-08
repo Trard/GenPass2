@@ -1,15 +1,19 @@
+#!/usr/bin/python
+# -*- coding: UTF8 -*-
+
 from widget_classes import *
 from other_classes import *
+import tkinter as tk
 
-select_number, select_letter, select_gr_letter = IntVar(), IntVar(), IntVar()
-select_sm_letter, select_other = IntVar(), IntVar()
+select_number, select_letter, select_gr_letter = tk.IntVar(), tk.IntVar(), tk.IntVar()
+select_sm_letter, select_other = tk.IntVar(), tk.IntVar()
 select_number.set(1)
 select_letter.set(1)
 select_gr_letter.set(1)
 select_sm_letter.set(1)
 select_other.set(1)
 
-select_symbolbet_action = IntVar()
+select_symbolbet_action = tk.IntVar()
 select_symbolbet_action.set(1)
 
 symbolbet = Symbolbet('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*')
@@ -18,18 +22,18 @@ range_len_pas = RangeLen()
 
 
 class GenUI(UI):
-    itog_frame = LabelFrame(text='Меню генератора', font='Helvetica 14')
+    itog_frame = tk.LabelFrame(text='Меню генератора', font='Helvetica 14')
     generate_pas_entry = ClassicEntry(itog_frame, font='Helvetica 15')
     generate_pas_button = ClassicButton(itog_frame, text='Сгенерировать', width=15, font='Helvetica 12')
     add_pas_storage_button = ClassicButton(itog_frame, text='Добавить в хранилище', width=20, font='Helvetica 12')
 
-    settings_frame = Frame()
-    first_frame = Frame(settings_frame)
-    work_symbols_frame = LabelFrame(first_frame, text='Взаимодействие с символами', font='Helvetica 11')
-    other_frame = LabelFrame(first_frame, text='Прочее', font='Helvetica 11')
-    second_frame = Frame(settings_frame)
-    select_symbolbet_frame = LabelFrame(second_frame, text='Выбор действия', font='Helvetica 11')
-    work_lenrange_frame = LabelFrame(second_frame, text='Диапазон длины', font='Helvetica 11')
+    settings_frame = tk.Frame()
+    first_frame = tk.Frame(settings_frame)
+    work_symbols_frame = tk.LabelFrame(first_frame, text='Взаимодействие с символами', font='Helvetica 11')
+    other_frame = tk.LabelFrame(first_frame, text='Прочее', font='Helvetica 11')
+    second_frame = tk.Frame(settings_frame)
+    select_symbolbet_frame = tk.LabelFrame(second_frame, text='Выбор действия', font='Helvetica 11')
+    work_lenrange_frame = tk.LabelFrame(second_frame, text='Диапазон длины', font='Helvetica 11')
 
     usual_symbolbet_radiobutton = ClassicRadioButton(master=select_symbolbet_frame, text='Обычные символы',
                                                      variable=select_symbolbet_action, value=1)
@@ -76,14 +80,14 @@ class GenUI(UI):
 
     def place(self):
         GenUI.itog_frame.pack()
-        GenUI.generate_pas_entry.pack(side=LEFT, padx=3)
-        GenUI.generate_pas_button.pack(side=LEFT, padx=3)
-        GenUI.add_pas_storage_button.pack(side=LEFT, padx=3)
+        GenUI.generate_pas_entry.pack(side=tk.LEFT, padx=3)
+        GenUI.generate_pas_button.pack(side=tk.LEFT, padx=3)
+        GenUI.add_pas_storage_button.pack(side=tk.LEFT, padx=3)
 
         GenUI.settings_frame.pack()
         frame_list = [GenUI.first_frame, GenUI.second_frame]
         for e in frame_list:
-            e.pack(padx=1, side=LEFT)
+            e.pack(padx=1, side=tk.LEFT)
 
         GenUI.work_symbols_frame.pack(pady=3)
         GenUI.other_frame.pack(pady=3)

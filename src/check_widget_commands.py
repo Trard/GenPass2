@@ -2,7 +2,7 @@ from function_generator import *
 from checkpas_interface import *
 from main_menu.interface import main_menu_interface
 from generator_interface import *
-
+import tkinter as tk
 
 def check_password():
     password = CheckUI.check_password_entry.get()
@@ -82,12 +82,12 @@ def get_range():
 def stay_letters():
     if allow_letter.get():
         allowed_symbolbet.delete_black_symbols(split(only_type_symbols(allowed_symbolbet.get_black(), 'letters')))
-        check_interface.gr_letter_checkbutton['state'] = NORMAL
-        check_interface.sm_letter_checkbutton['state'] = NORMAL
+        check_interface.gr_letter_checkbutton['state'] = tk.NORMAL
+        check_interface.sm_letter_checkbutton['state'] = tk.NORMAL
     else:
         allowed_symbolbet.add_black_symbols(split(only_type_symbols(allowed_symbolbet.get(), 'letters')))
-        check_interface.gr_letter_checkbutton['state'] = DISABLED
-        check_interface.sm_letter_checkbutton['state'] = DISABLED
+        check_interface.gr_letter_checkbutton['state'] = tk.DISABLED
+        check_interface.sm_letter_checkbutton['state'] = tk.DISABLED
 
 
 def stay_sm_letters():
@@ -95,11 +95,11 @@ def stay_sm_letters():
         allowed_symbolbet.delete_black_symbols(
             split(selection_letters(only_type_symbols(allowed_symbolbet.get_black(), 'letters'), 'small_letters')))
         if allow_gr_letter.get():
-            check_interface.letter_checkbutton['state'] = NORMAL
+            check_interface.letter_checkbutton['state'] = tk.NORMAL
     else:
         allowed_symbolbet.add_black_symbols(
             split(selection_letters(only_type_symbols(allowed_symbolbet.get(), 'letters'), 'small_letters')))
-        check_interface.letter_checkbutton['state'] = DISABLED
+        check_interface.letter_checkbutton['state'] = tk.DISABLED
 
 
 def stay_gr_letters():
@@ -107,11 +107,11 @@ def stay_gr_letters():
         allowed_symbolbet.delete_black_symbols(
             split(selection_letters(only_type_symbols(allowed_symbolbet.get_black(), 'letters'), 'great_letters')))
         if allow_sm_letter.get():
-            check_interface.letter_checkbutton['state'] = NORMAL
+            check_interface.letter_checkbutton['state'] = tk.NORMAL
     else:
         allowed_symbolbet.add_black_symbols(
             split(selection_letters(only_type_symbols(allowed_symbolbet.get(), 'letters'), 'great_letters')))
-        check_interface.letter_checkbutton['state'] = DISABLED
+        check_interface.letter_checkbutton['state'] = tk.DISABLED
 
 
 def stay_numbers():
