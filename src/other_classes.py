@@ -1,5 +1,4 @@
-from root_description import *
-
+from function_generator import change_symbol, r
 
 class Symbolbet:
     def __init__(self, symbolbet=''):
