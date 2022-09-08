@@ -1,6 +1,6 @@
 from function_generator import *
 from checkpas_interface import *
-from mainmenu_interface import *
+from main_menu.mainmenu_interface import *
 from generator_interface import *
 
 

@@ -1,5 +1,5 @@
 from generator_widg_commands import *
-from mainmenu_widg_commands import *
+from main_menu.mainmenu_widg_commands import *
 from check_widg_commands import *
 from set_widg_commands import *
 from title_interface import *
