@@ -1,0 +1,16 @@
+[project]
+name = "GenPass"
+version = "0.7.0"
+authors = [
+    { name = "Vasiliy Nehin" },
+    { name = "Eduard Baturin"}
+]
+description = "Check | Generate | Save"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+classifiers = []
+
+[project.urls]
+"Homepage" = "https://github.com/BazziLeO/GenPass2"
+"Bug Tracker" = "https://github.com/BazziLeO/GenPass2/issues"
