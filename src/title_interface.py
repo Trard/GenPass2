@@ -1,5 +1,5 @@
-from other_classes import *
-from widget_classes import *
+from other_classes import UI
+from widget_classes import ClassicLabel
 import tkinter as tk
 
 class TitleUI(UI):
