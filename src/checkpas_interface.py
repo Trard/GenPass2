@@ -1,5 +1,5 @@
-from widget_classes import *
-from other_classes import *
+from widget_classes import ClassicButton, EraseWidget, ClassicRadioButton, ClassicCheckButton
+from other_classes import RangeLen, UI, Symbolbet
 import tkinter as tk
 
 allow_number, allow_letter, allow_gr_letter = tk.IntVar(), tk.IntVar(), tk.IntVar()
@@ -15,9 +15,6 @@ select_checksymbolbet_action.set(1)
 allowed_symbolbet = Symbolbet('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*')
 required_check_symbolbet = Symbolbet()
 len_checkpas_range = RangeLen()
-
-
-
 
 
 class CheckUI(UI):

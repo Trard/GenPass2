@@ -1,7 +1,7 @@
 from main_menu.interface import main_menu_interface
-from checkpas_interface import *
-from generator_interface import *
-from set_interface import *
+from checkpas_interface import check_interface
+from generator_interface import gen_interface
+from set_interface import settings_interface
 
 def entry_togenerator():
     main_menu_interface.place_forget()

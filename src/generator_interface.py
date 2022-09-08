@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # -*- coding: UTF8 -*-
 
-from widget_classes import *
-from other_classes import *
+from widget_classes import ClassicButton, ClassicEntry, ClassicRadioButton, EraseWidget, ClassicCheckButton
+from other_classes import Symbolbet, RangeLen, UI
 import tkinter as tk
 
 select_number, select_letter, select_gr_letter = tk.IntVar(), tk.IntVar(), tk.IntVar()

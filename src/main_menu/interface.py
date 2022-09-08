@@ -1,5 +1,5 @@
-from widget_classes import *
-from other_classes import *
+from widget_classes import ClassicButton
+from other_classes import UI
 import tkinter as tk
 
 
