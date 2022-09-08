@@ -2,7 +2,7 @@ from function_generator import *
 from checkpas_interface import *
 from main_menu.interface import main_menu_interface
 from generator_interface import *
-import tkinter as tk
+from tkinter import messagebox
 
 def check_password():
     password = CheckUI.check_password_entry.get()

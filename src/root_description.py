@@ -1,5 +1,4 @@
 import tkinter as tk
-from tkinter import messagebox
 from function_generator import *
 
 root = tk.Tk()

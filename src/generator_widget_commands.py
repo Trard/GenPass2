@@ -6,6 +6,7 @@ from generator_interface import *
 from main_menu.interface import main_menu_interface
 from checkpas_interface import *
 import tkinter as tk
+from tkinter import messagebox
 
 def select_translation(translation_pairs, language='russian'):
     if language == 'russian':
