@@ -34,4 +34,4 @@ class MainUI(UI):
         MainUI.main_frame.place_forget()
 
 
-mmenu_interface = MainUI()
+main_menu_interface = MainUI()

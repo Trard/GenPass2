@@ -143,7 +143,7 @@ def get_list():
 
 def leave():
     check_interface.place_forget()
-    mmenu_interface.place()
+    main_menu_interface.place()
 
 def set_standart():
     allowed_symbolbet.delete_symbols(split(allowed_symbolbet.get()))

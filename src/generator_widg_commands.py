@@ -177,7 +177,7 @@ def set_checkpas_settings():
 
 def settings_window_leave():
     gen_interface.place_forget()
-    mmenu_interface.place()
+    main_menu_interface.place()
 
 
 gen_interface.generate_pas_button['command'] = generate

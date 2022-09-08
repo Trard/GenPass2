@@ -6,7 +6,7 @@ from checkpas_interface import check_interface
 
 def portal_tomain():
     settings_interface.place_forget()
-    mmenu_interface.place()
+    main_menu_interface.place()
 
 def set_black_theme():
     def set_theme(widget_list):
@@ -46,7 +46,7 @@ def set_black_theme():
                     element.config(fg='black', activeforeground='black', bg='gray94', activebackground='gray94', selectcolor='white')
             root.config(bg='gray94')
     set_theme(gen_interface.get_widgets())
-    set_theme(mmenu_interface.get_widgets())
+    set_theme(main_menu_interface.get_widgets())
     set_theme(settings_interface.get_widgets())
     set_theme(title_interface.get_widgets())
     set_theme(check_interface.get_widgets())

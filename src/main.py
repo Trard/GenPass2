@@ -5,5 +5,5 @@ from set_widg_commands import *
 from title_interface import *
 
 title_interface.place()
-mmenu_interface.place()
+main_menu_interface.place()
 root.mainloop()
