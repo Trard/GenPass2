@@ -1,7 +1,7 @@
 from generator_widg_commands import *
 from main_menu.widget_commands import *
-from check_widg_commands import *
-from set_widg_commands import *
+from check_widget_commands import *
+from set_widget_commands import *
 from title_interface import *
 
 title_interface.place()
