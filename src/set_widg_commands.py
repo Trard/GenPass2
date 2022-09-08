@@ -1,5 +1,5 @@
 from set_interface import *
-from main_menu.interface import *
+from main_menu.interface import main_menu_interface
 from generator_interface import gen_interface
 from title_interface import *
 from checkpas_interface import check_interface

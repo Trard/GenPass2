@@ -1,4 +1,4 @@
-from main_menu.interface import *
+from main_menu.interface import main_menu_interface
 from checkpas_interface import *
 from generator_interface import *
 from set_interface import *
