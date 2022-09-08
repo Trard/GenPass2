@@ -1,7 +1,4 @@
 # Functions
-
-
-
 from random import randint as r
 from random import shuffle
 
@@ -81,8 +78,6 @@ def split(word):
     for e in word:
         result += e
     return result
-
-
 
 
 def do_nothing():
