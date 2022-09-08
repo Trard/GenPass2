@@ -1,7 +1,8 @@
-from set_interface import *
+from set_interface import settings_interface, choose_black_theme
+from root_description import root
 from main_menu.interface import main_menu_interface
 from generator_interface import gen_interface
-from title_interface import *
+from title_interface import title_interface
 from checkpas_interface import check_interface
 
 def portal_tomain():

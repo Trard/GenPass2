@@ -1,5 +1,5 @@
-from widget_classes import *
-from other_classes import *
+from widget_classes import ClassicButton, ClassicCheckButton
+from other_classes import UI
 import tkinter as tk
 
 choose_black_theme = tk.IntVar()
