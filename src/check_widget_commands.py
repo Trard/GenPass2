@@ -18,9 +18,9 @@ def check_password():
         result = f'Длина пароля не в рамках длины [{len_checkpas_range.get()[0]}, {len_checkpas_range.get()[1]}]'
     else:
         result = 'Проверка пройдена успешно'
-        for e in password:
-            if allowed_symbolbet.get().count(e) == 0:
-                result = f'Символа "{e}" нету в разрешенном списке!'
+        for symbol in password:
+            if allowed_symbolbet.get().count(symbol) == 0:
+                result = f'Символа "{symbol}" нету в разрешенном списке!'
                 break
     messagebox.showinfo("Результат", result)
 
