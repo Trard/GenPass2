@@ -1,4 +1,4 @@
-from root_description import *
+from root_description import root
 from function_generator import do_nothing
 import tkinter as tk
 
