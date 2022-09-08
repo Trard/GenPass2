@@ -4,7 +4,7 @@
 from function_generator import *
 from generator_interface import *
 from main_menu.interface import main_menu_interface
-from checkpas_interface import *
+from checkpas_interface import required_check_symbolbet, allowed_symbolbet, len_checkpas_range
 import tkinter as tk
 from tkinter import messagebox
 
