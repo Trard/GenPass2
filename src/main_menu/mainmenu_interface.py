@@ -35,5 +35,3 @@ class MainUI(UI):
 
 
 mmenu_interface = MainUI()
-
-

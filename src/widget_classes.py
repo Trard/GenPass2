@@ -52,4 +52,3 @@ class EraseWidget:
 
     def insert(self, index, text):
         self.eraseentry.insert(index, text)
-

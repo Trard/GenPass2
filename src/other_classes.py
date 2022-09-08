@@ -84,7 +84,3 @@ class UI:
 
     def get_widgets(self):
         return self.widget_list
-
-
-
-

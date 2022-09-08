@@ -30,5 +30,3 @@ class SetUI(UI):
         SetUI.main_frame.place_forget()
 
 settings_interface = SetUI()
-
-
