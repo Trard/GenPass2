@@ -1,4 +1,4 @@
-from generator_widg_commands import *
+from generator_widget_commands import *
 from main_menu.widget_commands import *
 from check_widget_commands import *
 from set_widget_commands import *
